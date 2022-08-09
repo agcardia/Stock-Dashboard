@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+}
+
+.graphs {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: auto auto;
+}
