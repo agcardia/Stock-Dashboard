@@ -24,7 +24,6 @@ class Financials():
         )
 
         try:
-            print(url)
             response = requests.get(url).json()
             assert(response['status'] == 'OK'),'Bad Status'
             response = response['results']
@@ -40,7 +39,6 @@ class Financials():
         res = []
         for response in responses:
             for result in response:
-                print(result["financials"]["income_statement"]["revenues"])
                 res.append((f'{result["fiscal_period"]} {result["fiscal_year"]}',
                 result["financials"]["income_statement"]["basic_earnings_per_share"]["value"],
                 result["financials"]["income_statement"]["revenues"]["value"]))
