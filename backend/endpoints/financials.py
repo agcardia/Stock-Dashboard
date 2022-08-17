@@ -24,6 +24,7 @@ class Financials():
         )
 
         try:
+            print(url)
             response = requests.get(url).json()
             assert(response['status'] == 'OK'),'Bad Status'
             response = response['results']
