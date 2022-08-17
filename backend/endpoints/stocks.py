@@ -27,7 +27,6 @@ class Stock():
         )
 
         try:
-            print(url)
             response = requests.get(url).json()
             response = response['results']
             return response
