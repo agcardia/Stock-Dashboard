@@ -4,7 +4,7 @@ This is a full stack application that allows a user to stock price data and quar
 # Installation
 To install the app clone the github repo onto your computer. 
 ```bash
-git@github.com:agcardia/Stock-Dashboard.git
+git clone git@github.com:agcardia/Stock-Dashboard.git
  ```
 Next cd into the folder Stock-Dashboard and build the Docker container which will run the app. 
 ```bash
