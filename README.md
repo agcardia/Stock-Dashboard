@@ -14,4 +14,4 @@ cd Stock-Dashboard && docker-compose up
 
 ![Text](/Dashboard.png?raw=True)
 
-The dashboard contains four panels
+This applicaiton uses the [Polygon](https://polygon.io) api for acessing company stock and financial data. You will need to generate a free API key to use the application. 
