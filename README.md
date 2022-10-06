@@ -10,3 +10,8 @@ Next cd into the folder Stock-Dashboard and build the Docker container which wil
 ```bash
 cd Stock-Dashboard && docker-compose up
 ```
+# Overview
+
+![Text](/Dashboard.png?raw=True)
+
+The dashboard contains four panels
