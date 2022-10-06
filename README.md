@@ -12,12 +12,9 @@ cd Stock-Dashboard && docker-compose up
 ```
 # Overview
 
-![Text](/Dashboard.png?raw=True)
+This application uses the [Polygon](https://polygon.io) api for acessing company stock and financial data. You will need to generate a free API key to use the application. To update the app to use you API key simply add your key to the KEYS.cfg file in the backend folder.
 
-
-This applicaiton uses the [Polygon](https://polygon.io) api for acessing company stock and financial data. You will need to generate a free API key to use the application. To update the app to use you API key simply add your key to the KEYS.cfg file in the backend folder.
-
-````
+```
 .
 ├── README.md
 ├── backend
@@ -25,30 +22,9 @@ This applicaiton uses the [Polygon](https://polygon.io) api for acessing company
 │   ├── app.py
 │   ├── dockerfile
 │   ├── endpoints
-│   │   ├── __init__.py
-│   │   ├── base.py
-│   │   ├── financials.py
-│   │   └── stocks.py
-│   └── requirements.txt
-├── docker-compose.yml
-└── frontend
-    ├── dockerfile
-    ├── package-lock.json
-    ├── package.json
-    ├── public
-    │   └── index.html
-    └── src
-        ├── App.css
-        ├── App.js
-        ├── components
-        │   ├── Dropdown
-        │   │   └── Dropdown.jsx
-        │   ├── Graph
-        │   │   ├── Bar.jsx
-        │   │   └── Line.jsx
-        │   └── Submit
-        │       ├── Submit.css
-        │       └── Submit.jsx
-        ├── index.css
-        └── index.js
- ```
+```
+
+![Text](/Dashboard.png?raw=True)
+
+To use the dashboard type in a ticker into the search bar and press submit. The dahsboard will display the following four panels; a graph of the stock price vs time, a graph of the volume traded vs time, a graph of the earnings per share for the last 3 financials quarters, and a graph of the total revenue over the last three financial quarters. Use the timeframe menu to select the time window for the price and volume charts.
+
